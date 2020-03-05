@@ -1,4 +1,12 @@
-var picture = [
+     $('#site-search').on("keyup", function() {
+        var value = $('#site-search').val().toLowerCase();
+        $('img').filter(function() {
+          $('img').toggle($('img').attr('data-title').toLowerCase().indexOf(value) > -1)
+        });
+      });
+
+
+/* var picture = [
     {    
         keywords : "ilovehaybalestookthissnaponadrivethroughthecountrysidepastsomestrawfields",
          picture : "#1"
@@ -63,7 +71,7 @@ var picture = [
          $('img').show()
      }
      }
-     }); 
+     }); */
 
 
 /* var picture = [
